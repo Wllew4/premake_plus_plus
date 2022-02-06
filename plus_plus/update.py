@@ -67,7 +67,7 @@ else:
 	newly_installed_version_tag = get_currently_installed_version()
 	if newly_installed_version_tag == latest_version_tag:
 		print('Successfully updated premake to ' + latest_version_tag)
-		os.popen('python remove_old_version.py')
+		os.popen('python plus_plus/remove_old_version.py')
 	else:
 		print('Something went wrong!')
 		print('Expected version: ' + latest_version_tag)

@@ -1,23 +1,35 @@
 # premake++
-A lightweight version manager for Premake that comes with some additional scripts.
+Helpful Premake actions for updating, etc.
 
-## Features:
-```
-python update.py
-```
-Will update your premake5.exe to the latest version
-or download the latest version if it is not found in
-your PATH.
+This has not yet been tested on Linux or MacOS, so I cannot confirm that they work on those platforms, though they are expected to.
 
-In premake5.lua
+# Getting started:
+1. You must have Python 3 installed on your system.
+1. Download the [latest release](https://github.com/Wllew4/premake-plus-plus/releases).
+1. Place the `premake_plus_plus/` folder wherever you please, and add it to your system `PATH`.
+	* This is where your premake5 installation will live.
+1. Open a terminal `premake_plus_plus/`.
+1. Run `python plus_plus/update.py`.
+	* This will install the latest release of [premake-core](https://github.com/premake/premake-core) to `premake_plus_plus/`.
+1. You should now see `premake5.exe` in `premake_plus_plus/`. Congratulations!
+1. In order to use the provided actions with your Premake project, you will need to import the module. Add this line to the top of your project's `premake5.lua`:
 ```lua
-require('vscode')
+require("plus_plus")
 ```
-Will allow you to run
+
+# Features:
+## Keeping Premake up-to-date
+To replace your `premake5.exe` with the latest release available on GitHub, run this action:
+```
+premake5 update
+```
+
+## VSCode configuration
+Generate `.vscode/c_cpp_properties.json` with:
 ```
 premake5 vscode
 ```
-which will generate `.vscode/c_cpp_properties.json`.
+This will help intellisense locate included files and available STL features.
 
-## Planned features:
-Premake actions to build vs solutions or from makefile.
+# Planned features:
+Premake actions to build VS solutions or from Makefile.

@@ -1,8 +1,5 @@
 local p = premake
 
-p.modules.vscode = {}
-local m = p.modules.vscode
-
 local projects = {}
 
 newaction {
@@ -46,5 +43,3 @@ newaction {
         end
     end
 }
-
-return m
