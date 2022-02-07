@@ -1,4 +1,8 @@
 # premake++
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Wllew4/premake_plus_plus)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Wllew4/premake_plus_plus)
+![GitHub](https://img.shields.io/github/license/Wllew4/premake_plus_plus)
+
 Helpful Premake actions for updating, etc.
 
 This has not yet been tested on Linux or MacOS, so I cannot confirm that they work on those platforms, though they are expected to.
