@@ -9,7 +9,7 @@ This has not yet been tested on Linux or MacOS, so I cannot confirm that they wo
 1. Place the `premake_plus_plus/` folder wherever you please, and add it to your system `PATH`.
 	* This is where your premake5 installation will live.
 1. Open a terminal `premake_plus_plus/`.
-1. Run `python plus_plus/update.py`.
+1. Run `python install.py`.
 	* This will install the latest release of [premake-core](https://github.com/premake/premake-core) to `premake_plus_plus/`.
 1. You should now see `premake5.exe` in `premake_plus_plus/`. Congratulations!
 1. In order to use the provided actions with your Premake project, you will need to import the module. Add this line to the top of your project's `premake5.lua`:
